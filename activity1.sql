@@ -1,10 +1,14 @@
-create table person (
-    Surnamne varchar(255),
-    Firstname varchar(255),
-    id int,
+CREATE TABLE personnalinfo (
+        personid int,
+        Personname varchar(255),
+        personaddress varchar(255),
+        personsdistrict varchar(255)
     );
 
-insert into person(Surname, Firstname, id),
-values('Korir', 'Melvin' , 6083892);
+insert into personnalinfo(personid, Personname, personaddress, personsdistrict)VALUES 
+(0838198,'Mike', 'second street', 'District 12'),
+(8399213, 'Joy', 'Park avenue', 'District 3'),
+(2145879, 'Everdeen', 'Moi avenue','District 7');
 
-drop table person;
+select personid from personnalinfo;
+
