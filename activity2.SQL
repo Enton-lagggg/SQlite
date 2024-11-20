@@ -6,9 +6,13 @@ create table person (
     );
     
 insert into person('Surnamne','Firstname', 'id', 'salary')
-values ('John', 'Andrew',6095354, 200000),
+values ('John', 'Andrew',6095354, 700000),
  ('Wanyama', 'Mi',6095675, 700000),
- ('Jechummba', 'An',6095239, 400000);
+ ('Jechummba', 'An',6095239, 700000),
+ ('James', 'Drew',6095354, 400000),
+ ('Wafula', 'Mike',6095675, 400000),
+ ('Chummba', 'Andre',6095239, 400000);
+
  select avg(salary) from person;
 
  select Surnamne, salary from person where Firstname like '_n%' ;
@@ -31,7 +35,12 @@ select avg(salary)
 select DISTINCT Surnamne,Firstname
 from person;
 
+select salary
+from person
+group by salary;
 
+SELECT * from person
+order by Firstname DESC;
 
 
 
